@@ -4,18 +4,18 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "20496814")
+    API_HASH  = os.environ.get("API_HASH", "a87c1094edd18650e5dfee0f2bc78bda")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8088395659:AAHKN6PeVKEe2SdFg1VfYOdzyvUz84QqfI4") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","rename")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","nhmovies9")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://nhmovies9:nhmovies9@cluster0.lp65c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://envs.sh/jUp.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    START_PIC   = os.environ.get("START_PIC", "https://i.imghippo.com/files/GS3653JdU.jpg")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6276113288').split()]
 
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "TechifyBots") 
